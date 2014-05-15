@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ea4e24-4525-464c-8e06-cc60021b52c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mongo-2.10.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mongo_2_10_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jsoup-1.7.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalDateCollector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/EdgarEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/snowfox/secAnal/RunDateExtractor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_7_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/june.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SECAnalNew.iml" afterPath="$PROJECT_DIR$/SECAnalNew.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SECAnal_New.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/RunCrawler.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1399467386769" ignored="false" />
-    <file path="/Dummy.txt" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1399467327993" ignored="false" />
+    <file path="/Dummy.txt" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1400116143841" ignored="false" />
     <file path="/Environment.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1399460158590" ignored="false" />
     <file path="/DisposalCollector.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1399467222110" ignored="false" />
     <file path="/fragment.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1399461412264" ignored="false" />
+    <file path="/DisposalDateCollector.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1400128337000" ignored="false" />
+    <file path="/RunDateExtractor.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1400117335356" ignored="false" />
+    <file path="/Document.java" changelist="f9ea4e24-4525-464c-8e06-cc60021b52c3" time="1400120697158" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -68,7 +72,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -81,7 +84,7 @@
       <file leaf-file-name="RunCrawler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+            <state line="31" column="13" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,20 +93,28 @@
       <file leaf-file-name="DisposalCollector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="17" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="81" column="32" selection-start="3377" selection-end="3651" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoConnector.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java">
+      <file leaf-file-name="RunDateExtractor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunDateExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="12" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-0.8874172">
+            <state line="5" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisposalDateCollector.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalDateCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="55" selection-start="2834" selection-end="2834" vertical-scroll-proportion="2.1240458">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1463#1476#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,17 +139,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/Environment.java" />
-        <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java" />
         <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java" />
         <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java" />
+        <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java" />
+        <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/RunDateExtractor.java" />
+        <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/Document.java" />
+        <option value="$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalDateCollector.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -166,7 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,8 +238,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SECAnal_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SECAnalNew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -238,18 +266,19 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mongo-2.10.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jsoup-1.7.3.jar!/" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.RunCrawler">
+  <component name="RunManager" selected="Application.RunDateExtractor">
     <configuration default="false" name="RunCrawler" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.snowfox.secAnal.RunCrawler" />
       <option name="VM_PARAMETERS" value="" />
@@ -263,6 +292,28 @@
       <module name="SECAnalNew" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RunDateExtractor" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.snowfox.secAnal.RunDateExtractor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SECAnalNew" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -321,12 +372,14 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.RunCrawler" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RunDateExtractor" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.RunCrawler" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.RunDateExtractor" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RunCrawler" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -345,33 +398,33 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39928487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28894174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32818073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.67132866" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6722289" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -440,34 +493,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SECAnal/src/core/EdgarEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.5051851">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SECAnal/src/core/IndexProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="82" selection-start="256" selection-end="256" vertical-scroll-proportion="-1.1598837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SECAnal/src/ui/ContentDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="12" selection-start="992" selection-end="1375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="29" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -476,17 +501,107 @@
     <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="17" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="28" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="17" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="12" selection-start="1211" selection-end="1211" vertical-scroll-proportion="-0.8874172">
+        <state line="89" column="30" selection-start="2911" selection-end="2911" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SECAnal/src/core/EdgarEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="66" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.5051851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SECAnal/src/core/IndexProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="82" selection-start="256" selection-end="256" vertical-scroll-proportion="-1.1598837" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SECAnal/src/ui/ContentDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="12" selection-start="992" selection-end="1375" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/MongoConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.33206108">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="13" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/EdgarEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="390" selection-end="390" vertical-scroll-proportion="0.49534452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="32" selection-start="3377" selection-end="3651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/RunDateExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/snowfox/secAnal/runnable/DisposalDateCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="55" selection-start="2834" selection-end="2834" vertical-scroll-proportion="2.1240458">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1463#1476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,7 +682,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mongo-2.10.1</last-edited>
+          <last-edited>jsoup-1.7.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
