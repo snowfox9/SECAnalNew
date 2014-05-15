@@ -11,6 +11,8 @@ public class RunCrawler {
 
     public static void main(String[] args)
     {
+        MongoConnector.initiate();
+
         int NUM_THREADS = ThreadCounter.MAX_THREAD;
         Thread[] threads = new Thread[NUM_THREADS];
 

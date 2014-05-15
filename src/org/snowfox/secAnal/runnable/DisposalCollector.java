@@ -26,7 +26,7 @@ public class DisposalCollector implements Runnable {
         {
             DBObject object = MongoConnector.queryFindOne("cik", new BasicDBObject().append("status", 0));
             _id = new ObjectId(object.get("_id").toString());
-            cik = Integer.parseInt(object.get("cik").toString());
+            cik = (int) Float.parseFloat(object.get("cik").toString());
             numRows = MongoConnector.queryUpdate("cik", new BasicDBObject().append("_id", _id), new BasicDBObject().append("status", 1), false, false, null);
         }
 
@@ -47,7 +47,13 @@ public class DisposalCollector implements Runnable {
 
                     // if # of entries = 0 -> terminate searching
                     document = builder.parse(rssFeedPath);
-                    NodeList nodeList = document.getDocumentElement().getElementsByTagName("entry");
+
+                    NodeList nodeList = document.getDocumentElement().getElementsByTagName("company-info");
+                    Element element = (Element) nodeList.item(0);
+                    NodeList nodeCompanyName = element.getElementsByTagName("conformed-name");
+                    String companyName = nodeCompanyName.item(0).getTextContent();
+
+                    nodeList = document.getDocumentElement().getElementsByTagName("entry");
 
                     if(nodeList.getLength() == 0)
                     {
@@ -57,7 +63,6 @@ public class DisposalCollector implements Runnable {
                     for(int i=0; i<nodeList.getLength(); i++)
                     {
                         Node node = nodeList.item(i);
-                        Element element;
                         if(node instanceof Element)
                         {
                             element = (Element) node;
@@ -68,11 +73,15 @@ public class DisposalCollector implements Runnable {
                             String items = listItems.item(0).getTextContent();
                             listItems = elementContent.getElementsByTagName("filing-href");
                             String href = listItems.item(0).getTextContent();
+                            listItems = elementContent.getElementsByTagName("filing-date");
+                            String fileDate = listItems.item(0).getTextContent();
 
                             if(items.contains("2.05"))
                             {
+                                System.out.println("has disposal");
                                 MongoConnector.queryInsert("disposals", new BasicDBObject().append("content", 0)
-                                        .append("cik", cik).append("href", href), null);
+                                        .append("cik", cik).append("href", href).append("fileDate", fileDate)
+                                        .append("companyName", companyName), null);
                             }
                         }
                     }

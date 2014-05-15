@@ -72,11 +72,14 @@ public class MongoConnector {
     {
         if(writeConcern == null) writeConcern = writeConcernDefault;
         DBCollection collection = mongoDB.getCollection(collectionName);
-        WriteResult writeResult = collection.update(condition, document, upsert, multi, writeConcern);
+        WriteResult writeResult = collection.update(condition, new BasicDBObject().append("$set", document), upsert, multi, writeConcern);
+
+        /*
         if(writeResult.getLastError() != null)
         {
             throw writeResult.getLastError().getException();
-        }
+        }*/
+
         return writeResult.getN();
     }
 
